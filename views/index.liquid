@@ -39,17 +39,15 @@
             <p class="card">Maya</p>
             <p class="card">ZBrush</p>
             <p class="card">Procreate</p>
-
         </div>
     </section>
 
     <section class="active">
         <header>
-            <h2>Hi, my name is Iris</h2><span>👋</span>
+            <h2>Hi, my name is {{ person.nickname }}</h2><span>👋</span>
         </header>
         <div>
             <p>Nice to meet you!</p>
-            {% comment %} <img src="assets/Squad1G-Iris.jpg" alt="it's me!"> {% endcomment %}
         </div>
     </section>
 
@@ -82,7 +80,7 @@
                 aliquid voluptatem repellat quia tenetur labore vero delectus impedit amet iure reprehenderit quaerat,
                 fugit
                 voluptatibus nemo.</p>
-            <a href="https://github.com/irisvw" class="card">Github</a>
+            <a href="https://github.com/{{ person.github_handle }}" class="card">Github</a>
             <a href="https://www.linkedin.com/in/iris-van-willigen-678463292/" class="card">LinkedIn</a>
             <a href="https://www.instagram.com/yellowish_iris" class="card">Instagram</a>
         </div>
