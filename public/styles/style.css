@@ -102,3 +102,21 @@ section:nth-of-type(4) {
 section:nth-of-type(5) {
     background-color: lightgreen;
 }
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    height: 3em;
+    padding: .5em;
+    margin: .5em;
+    min-width: max-content;
+
+    color: black;
+    text-decoration: none;
+}
