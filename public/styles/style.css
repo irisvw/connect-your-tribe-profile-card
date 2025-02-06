@@ -183,3 +183,30 @@ section:nth-of-type(5) {
     color: black;
     text-decoration: none;
 }
+
+a.card::after {
+    content: " ";
+    display: inline-block;
+    background-image: url("../assets/external-link.svg");
+    background-repeat: no-repeat;
+    padding-left: 1.5em;
+}
+
+a.card::after {
+    content: " ";
+    display: inline-block;
+    background-image: url("../assets/external-link.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1.25em;
+    height: 1.25em;
+    background-size: contain;
+    padding-left: .4em;
+    position: relative;
+    top: .1em;
+}
+
+
+a.card:hover {
+    text-decoration: underline;
+}
