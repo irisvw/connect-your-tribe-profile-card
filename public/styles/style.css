@@ -58,7 +58,7 @@ main {
 
 section {
     display: grid;
-    grid-template-rows: min-content 1fr;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     flex-grow: 1;
     justify-content: center;
@@ -95,7 +95,7 @@ section {
     section {
         height: 100%;
         width: 0px;
-        grid-template-columns: min-content 1fr;
+        grid-template-columns: fit-content;
         grid-template-rows: 1fr;
 
         p {
@@ -110,6 +110,8 @@ section {
 
 section.active {
     height: 50%;
+    grid-template-rows: min-content 1fr;
+    grid-template-columns: 1fr;
 
     div {
         display: block;
@@ -118,6 +120,7 @@ section.active {
 
 @media screen and (min-width: 768px) {
     section.active {
+        grid-template-columns: min-content 1fr;
         height: 100%;
         width: 50%;
     }
